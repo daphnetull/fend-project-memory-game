@@ -34,6 +34,88 @@ h1 {
 }
 
 /*
+ * Helper classes
+ */
+
+.display-none {
+    display: none;
+}
+
+/*
+ * Styles for modal window
+ */
+
+.modal {
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.modal-header {
+    text-align: center;
+}
+
+.score-panel-modal {
+    text-align: center;
+}
+
+.stars-modal {
+    list-style-type: none;
+    padding: 0;
+}
+
+.stars-modal li {
+    display: inline-block;
+    font-size: 64px;
+    color: #f4c242;
+}
+
+.modal-paragraph {
+    text-align: center;
+    font-size: 24px;
+}
+
+.modal-restart {
+    background-color: #2D8BA4;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 36px;
+    margin: 40px auto;
+    padding: 15px;
+    text-align: center;
+    transition: .3s;
+    width: 240px;
+}
+
+.modal-restart:hover {
+    background-color: #808DC7;
+}
+
+/*
+ * Timer display styles
+ */
+
+.timer-label {
+    text-align: center;
+    font-size: 36px;
+}
+
+/*
  * Styles for the deck of cards
  */
 
@@ -85,25 +167,28 @@ h1 {
  * Styles for the Score Panel
  */
 
-.score-panel {
+.score-panel-regular {
     text-align: left;
     width: 345px;
     margin-bottom: 10px;
 }
 
-.score-panel .stars {
+.score-panel-regular .stars {
+    display: inline-block;
+}
+
+.stars-regular {
     margin: 0;
     padding: 0;
-    display: inline-block;
     margin: 0 5px 0 0;
 }
 
-.score-panel .stars li {
+.score-panel-regular .stars li {
     list-style: none;
     display: inline-block;
 }
 
-.score-panel .restart {
+.score-panel-regular .restart {
     float: right;
     cursor: pointer;
 }
