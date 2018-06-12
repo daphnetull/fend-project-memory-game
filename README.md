@@ -5,13 +5,13 @@
 * [Instructions](#instructions)
 * [Contributing](#contributing)
 
-## Instructions
+## Overview
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+This is my version of Project 2 for Udacity's front-end web development (FEND) nanodegree program.  It is a simple classic memory game where the user must successfully match all cards.  Cards that don't match will be revealed for 2 seconds to allow the user to memorize them.      
 
-To get started, open `js/app.js` and start building out the app's functionality
+The initial design of the deck (minus the opening and closing modal windows) was provided as a starter set by the Udacity instructors, so this was mostly a JavaScript project.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+When time allows upon the completion of the nanodegree, I plan to go back and redesign it from scratch.
 
 ## Contributing
 
