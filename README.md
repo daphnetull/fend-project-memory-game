@@ -3,7 +3,9 @@
 ## Table of Contents
 
 * [Instructions](#instructions)
+* [Installation](#installation)
 * [Contributing](#contributing)
+
 
 ## Overview
 
@@ -13,8 +15,10 @@ The initial design of the deck (minus the opening and closing modal windows) was
 
 When time allows upon the completion of the nanodegree, I plan to go back and redesign it from scratch.
 
-## Contributing
+## Installation
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+No installation is required - just play it in your browser here: https://daphnetull.github.io/fend-project-memory-game/
+
+## Contributing
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
