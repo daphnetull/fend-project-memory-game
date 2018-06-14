@@ -43,7 +43,8 @@ const resetButton = document.querySelectorAll('.restart');
  * Variable to store the modal window & its associated parts
  */
 
-const modalWindow = document.querySelector('.modal');
+const modalWindow = document.querySelectorAll('.modal');
+const modalWin = document.querySelector('.winning-modal');
 let modalTime = document.querySelector('.user-time');
 
 /* 
@@ -51,7 +52,7 @@ let modalTime = document.querySelector('.user-time');
  */
 
 let timerDisplay = document.querySelector('.timer-label');
-let timerVar = setInterval(timer, 1000);
+let timerVar;
 let seconds = 0;
 let minutes = 0;
 let totalTime;
@@ -139,7 +140,7 @@ function addingToLists(card){
 
 function gameWin(){
     clearInterval(timerVar);
-    modalWindow.classList.remove('display-none');
+    modalWin.classList.remove('display-none');
     modalTime.innerHTML = seconds + " seconds and " + minutes + " minutes."
 }
 
@@ -254,7 +255,9 @@ resetButton.forEach(function(reset){
         minutes = 0;
         clearInterval(timerVar);
         timerVar = setInterval(timer, 1000);
-        modalWindow.classList.add('display-none');
+        modalWindow.forEach(function(window){
+            window.classList.add('display-none');
+        })        
         matchedCardsList = [];
         movesTaken = 0;
         updateMovesDisplay(movesTaken);
